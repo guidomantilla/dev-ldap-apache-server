@@ -1,19 +1,19 @@
-FROM ubuntu:14.04
-MAINTAINER Robert Wunsch <wunsch@gmx.de>
+FROM ubuntu:18.04
 
 #############################################
 # ApacheDS installation
 #############################################
 
-ENV APACHEDS_VERSION 2.0.0-M23
+ENV APACHEDS_VERSION 2.0.0.AM26
 ENV APACHEDS_ARCH amd64
 ENV APACHEDS_ARCHIVE apacheds-${APACHEDS_VERSION}-${APACHEDS_ARCH}.deb
 
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections \
     && apt-get update \
-    && apt-get install -y ldap-utils procps openjdk-7-jre-headless curl \
-    && curl http://www.eu.apache.org/dist//directory/apacheds/dist/${APACHEDS_VERSION}/${APACHEDS_ARCHIVE} > ${APACHEDS_ARCHIVE} \
-    && dpkg -i ${APACHEDS_ARCHIVE} \
+    && apt-get install -y ldap-utils procps openjdk-8-jre-headless curl 
+
+ADD ${APACHEDS_ARCHIVE} .
+RUN dpkg -i ${APACHEDS_ARCHIVE} \
     && rm ${APACHEDS_ARCHIVE}
 
 
