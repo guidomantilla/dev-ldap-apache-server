@@ -22,70 +22,80 @@ description: This is the groups organizational unit
 
 
 dn: cn=user001, ou=users, dc=prowide,dc=com
-userPassword:: e01ENX1YMDNNTzFxblpkWWRneWZldUlMUG1RPT0=
+userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
+ UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
 sn: user001
 cn: user001
 
 dn: cn=user002, ou=users, dc=prowide,dc=com
-userPassword:: e01ENX1YMDNNTzFxblpkWWRneWZldUlMUG1RPT0=
+userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
+ UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
 sn: user002
 cn: user002
 
 dn: cn=user003, ou=users, dc=prowide,dc=com
-userPassword:: e01ENX1YMDNNTzFxblpkWWRneWZldUlMUG1RPT0=
+userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
+ UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
 sn: user003
 cn: user003
 
 dn: cn=user004, ou=users, dc=prowide,dc=com
-userPassword:: e01ENX1YMDNNTzFxblpkWWRneWZldUlMUG1RPT0=
+userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
+ UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
 sn: user004
 cn: user004
 
 dn: cn=user005, ou=users, dc=prowide,dc=com
-userPassword:: e01ENX1YMDNNTzFxblpkWWRneWZldUlMUG1RPT0=
+userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
+ UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
 sn: user005
 cn: user005
 
 dn: cn=user006, ou=users, dc=prowide,dc=com
-userPassword:: e01ENX1YMDNNTzFxblpkWWRneWZldUlMUG1RPT0=
+userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
+ UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
 sn: user006
 cn: user006
 
 dn: cn=user007, ou=users, dc=prowide,dc=com
-userPassword:: e01ENX1YMDNNTzFxblpkWWRneWZldUlMUG1RPT0=
+userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
+ UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
 sn: user007
 cn: user007
 
 dn: cn=user008, ou=users, dc=prowide,dc=com
-userPassword:: e01ENX1YMDNNTzFxblpkWWRneWZldUlMUG1RPT0=
+userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
+ UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
 sn: user008
 cn: user008
 
 dn: cn=user009, ou=users, dc=prowide,dc=com
-userPassword:: e01ENX1YMDNNTzFxblpkWWRneWZldUlMUG1RPT0=
+userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
+ UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
 sn: user009
 cn: user009
 
 dn: cn=user010,ou=users,dc=prowide,dc=com
-userPassword:: e01ENX1YMDNNTzFxblpkWWRneWZldUlMUG1RPT0=
+userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
+ UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
 sn: user010

@@ -12,7 +12,7 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
     && apt-get update \
     && apt-get install -y ldap-utils procps openjdk-8-jre-headless curl 
 
-ADD ${APACHEDS_ARCHIVE} .
+ADD dist/${APACHEDS_ARCHIVE} .
 RUN dpkg -i ${APACHEDS_ARCHIVE} \
     && rm ${APACHEDS_ARCHIVE}
 
@@ -36,7 +36,7 @@ RUN chown ${APACHEDS_USER}:${APACHEDS_GROUP} ${APACHEDS_CMD} \
     && chmod u+rx ${APACHEDS_CMD}
 
 ADD instance/* ${APACHEDS_BOOTSTRAP}/conf/
-ADD startup-entry.ldif ${APACHEDS_BOOTSTRAP}/
+ADD data/* ${APACHEDS_BOOTSTRAP}/
 ADD _opt_aem/* ${APACHEDS_BOOTSTRAP}/optional/
 
 RUN mkdir ${APACHEDS_BOOTSTRAP}/cache \
@@ -63,10 +63,10 @@ EXPOSE 10389 10636 60088 60464 8080 8443
 VOLUME ${APACHEDS_DATA}	
 
 ## If TESTDATA20K is set to TRUE the test-dataset with 20K users will be installed on first startup
-ENV TESTDATA20K TRUE
+ENV TESTDATA20K FALSE
 
 ## If this repo/Docker config is used in conjunction with "rwunsch/dockerfiles4aem" the variable INSTALL_AEM_CONFIG will push the AEM config for this LDAP server into AEM (author)
-ENV INSTALL_AEM_CONFIG TRUE
+ENV INSTALL_AEM_CONFIG FALSE
 	
 #############################################
 # ApacheDS wrapper command
