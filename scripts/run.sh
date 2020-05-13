@@ -26,7 +26,7 @@ if [ ! -d ${APACHEDS_INSTANCE_DIRECTORY} ]; then
 	if [ "$TESTDATA20K" = "TRUE" ]; then
 		/opt/apacheds-${APACHEDS_VERSION}/bin/apacheds console ${APACHEDS_INSTANCE} &
 		sleep 15
-		ldapadd -v -h localhost:10389 -c -x -D uid=admin,ou=system -w secret -f /bootstrap/startup-entry.ldif
+		ldapadd -v -h localhost:10389 -c -x -D uid=admin,ou=system -w secret -f /bootstrap/adobe-entry.ldif
 		/opt/apacheds-${APACHEDS_VERSION}/bin/apacheds stop ${APACHEDS_INSTANCE}
 	fi
 fi
