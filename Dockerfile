@@ -21,8 +21,9 @@ RUN dpkg -i ${APACHEDS_ARCHIVE} \
 # ApacheDS bootstrap configuration
 #############################################
 
-#ENV APACHEDS_INSTANCE default  	##when using this the run.sh does not go into the if clause as the folder is there already (for unknown reasons)
-ENV APACHEDS_INSTANCE aem-ldap
+#ENV APACHEDS_INSTANCE default  	
+##when using this the run.sh does not go into the if clause as the folder is there already 
+##(for unknown reasons)
 ENV APACHEDS_BOOTSTRAP /bootstrap
 ENV APACHEDS_SCRIPT run.sh
 ENV APACHEDS_CMD /${APACHEDS_SCRIPT}
@@ -37,7 +38,6 @@ RUN chown ${APACHEDS_USER}:${APACHEDS_GROUP} ${APACHEDS_CMD} \
 
 ADD instance/* ${APACHEDS_BOOTSTRAP}/conf/
 ADD data/* ${APACHEDS_BOOTSTRAP}/
-ADD _opt_aem/* ${APACHEDS_BOOTSTRAP}/optional/
 
 RUN mkdir ${APACHEDS_BOOTSTRAP}/cache \
     && mkdir ${APACHEDS_BOOTSTRAP}/run \
@@ -64,9 +64,6 @@ VOLUME ${APACHEDS_DATA}
 
 ## If TESTDATA20K is set to TRUE the test-dataset with 20K users will be installed on first startup
 ENV TESTDATA20K FALSE
-
-## If this repo/Docker config is used in conjunction with "rwunsch/dockerfiles4aem" the variable INSTALL_AEM_CONFIG will push the AEM config for this LDAP server into AEM (author)
-ENV INSTALL_AEM_CONFIG FALSE
 	
 #############################################
 # ApacheDS wrapper command

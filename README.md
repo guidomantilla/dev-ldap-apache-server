@@ -30,14 +30,12 @@ The folder */var/lib/apacheds-${APACHEDS_VERSION}* contains the runtime data and
 
 The container can be started issuing the following command:
 ```
-    docker run --name ldap --network=dockerfiles4aem_aem-network -d -p 10389:10389 rwunsch/apacheds-docker
+    docker run --name ldap -d -p 10389:10389 rwunsch/apacheds-docker
 ```
 Alternatively 
 ```    
 	./apacheds-docker/docker-run.sh
 ```
-
-Note: the flag "--network=dockerfiles4aem_aem-network" places the running container in the same network as the "[rwunsch/dockerfiles4aem](https://github.com/rwunsch/dockerfiles4aem)" docker containers. 
 
 ## Usage
 
@@ -77,15 +75,3 @@ The import can take quite a while on the first start (20-30 minutes). You can ch
 ```  
     docker logs ldap -f
 ```
-
-
-### AEM configuration import (with rwunsch/dockerfiles4aem)
-
-If you use this Dockerfile with AEM a default configuration is included in the folder "_opt_aem". 
-
-If you use this Dockerfile in conjunction with "[rwunsch/dockerfiles4aem](https://github.com/rwunsch/dockerfiles4aem)" this AEM configuration can be imported directly using the "ENV INSTALL_AEM_CONFIG" set to TRUE.
-
-This will use CURL to install the configs on "author" using "admin/admin" though the package manager.
-
-
-
