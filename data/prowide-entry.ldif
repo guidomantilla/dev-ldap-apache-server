@@ -19,131 +19,104 @@ ou: DEMO
 description: This is the groups organizational unit
 
 
-
-
-dn: cn=user001, ou=users, dc=prowide,dc=com
+dn: cn=viewer1, ou=users, dc=prowide,dc=com
 userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
  UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
-sn: user001
-cn: user001
+sn: viewer1
+cn: viewer1
 
-dn: cn=user002, ou=users, dc=prowide,dc=com
+dn: cn=viewer2, ou=users, dc=prowide,dc=com
 userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
  UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
-sn: user002
-cn: user002
+sn: viewer2
+cn: viewer2
 
-dn: cn=user003, ou=users, dc=prowide,dc=com
+dn: cn=creator1, ou=users, dc=prowide,dc=com
 userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
  UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
-sn: user003
-cn: user003
+sn: creator1
+cn: creator1
 
-dn: cn=user004, ou=users, dc=prowide,dc=com
+dn: cn=creator2, ou=users, dc=prowide,dc=com
 userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
  UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
-sn: user004
-cn: user004
+sn: creator2
+cn: creator2
 
-dn: cn=user005, ou=users, dc=prowide,dc=com
+dn: cn=approver1, ou=users, dc=prowide,dc=com
 userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
  UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
-sn: user005
-cn: user005
+sn: approver1
+cn: approver1
 
-dn: cn=user006, ou=users, dc=prowide,dc=com
+dn: cn=approver2, ou=users, dc=prowide,dc=com
 userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
  UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
-sn: user006
-cn: user006
+sn: approver2
+cn: approver2
 
-dn: cn=user007, ou=users, dc=prowide,dc=com
+dn: cn=admin, ou=users, dc=prowide,dc=com
 userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
  UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
-sn: user007
-cn: user007
+sn: admin
+cn: admin
 
-dn: cn=user008, ou=users, dc=prowide,dc=com
+dn: cn=admin2, ou=users, dc=prowide,dc=com
 userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
  UJ6dGtqbUdTOXlJUE9YSTBBPT0=
 objectClass: top
 objectClass: person
-sn: user008
-cn: user008
-
-dn: cn=user009, ou=users, dc=prowide,dc=com
-userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
- UJ6dGtqbUdTOXlJUE9YSTBBPT0=
-objectClass: top
-objectClass: person
-sn: user009
-cn: user009
-
-dn: cn=user010,ou=users,dc=prowide,dc=com
-userPassword:: e1NTSEEyNTZ9K3BLQXlkdFA2dXZ2M2tLWEI4SDJ5N1AvVDRQVUVnMGJLUkhGN
- UJ6dGtqbUdTOXlJUE9YSTBBPT0=
-objectClass: top
-objectClass: person
-sn: user010
-cn: user010
+sn: admin2
+cn: admin2
 
 
-
-dn: cn=ldap-marketing, ou=groups, dc=prowide,dc=com
+dn: cn=ldap-viewer, ou=groups, dc=prowide,dc=com
 objectClass: top
 objectClass: groupOfUniqueNames
-uniqueMember: cn=user001,ou=users,dc=prowide,dc=com
-uniqueMember: cn=user002,ou=users,dc=prowide,dc=com
-uniqueMember: cn=user008,ou=users,dc=prowide,dc=com
-uniqueMember: cn=user010,ou=users,dc=prowide,dc=com
-cn: ldap-marketing
+uniqueMember: cn=viewer1,ou=users,dc=prowide,dc=com
+uniqueMember: cn=viewer2,ou=users,dc=prowide,dc=com
+cn: ldap-viewer
 
-dn: cn=ldap-human-resources, ou=groups, dc=prowide,dc=com
+dn: cn=ldap-creator, ou=groups, dc=prowide,dc=com
 objectClass: top
 objectClass: groupOfUniqueNames
-uniqueMember: cn=user001,ou=users,dc=prowide,dc=com
-uniqueMember: cn=user006,ou=users,dc=prowide,dc=com
-uniqueMember: cn=user009,ou=users,dc=prowide,dc=com
-uniqueMember: cn=user010,ou=users,dc=prowide,dc=com
-cn: ldap-human-resources
+uniqueMember: cn=creator1,ou=users,dc=prowide,dc=com
+uniqueMember: cn=creator2,ou=users,dc=prowide,dc=com
+cn: ldap-creator
 
-dn: cn=ldap-products, ou=groups, dc=prowide,dc=com
+dn: cn=ldap-approver, ou=groups, dc=prowide,dc=com
 objectClass: top
 objectClass: groupOfUniqueNames
-uniqueMember: cn=user001,ou=users,dc=prowide,dc=com
-uniqueMember: cn=user004,ou=users,dc=prowide,dc=com
-uniqueMember: cn=user007,ou=users,dc=prowide,dc=com
-uniqueMember: cn=user010,ou=users,dc=prowide,dc=com
-cn: ldap-products
+uniqueMember: cn=approver1,ou=users,dc=prowide,dc=com
+uniqueMember: cn=approver2,ou=users,dc=prowide,dc=com
+cn: ldap-approver
 
-dn: cn=ldap-management, ou=groups, dc=prowide,dc=com
+dn: cn=ldap-administrator, ou=groups, dc=prowide,dc=com
 objectClass: top
 objectClass: groupOfUniqueNames
-uniqueMember: cn=user001,ou=users,dc=prowide,dc=com
-uniqueMember: cn=user003,ou=users,dc=prowide,dc=com
-uniqueMember: cn=user005,ou=users,dc=prowide,dc=com
-uniqueMember: cn=user010,ou=users,dc=prowide,dc=com
-cn: ldap-management
+uniqueMember: cn=admin,ou=users,dc=prowide,dc=com
+uniqueMember: cn=admin2,ou=users,dc=prowide,dc=com
+cn: ldap-administrator
 
-dn: cn=ldap-authors, ou=groups, dc=prowide,dc=com
+dn: cn=ldap-employees, ou=groups, dc=prowide,dc=com
 objectClass: top
 objectClass: groupOfUniqueNames
-uniqueMember: cn=ldap-marketing,ou=groups,dc=prowide,dc=com
-uniqueMember: cn=ldap-human-resources,ou=groups,dc=prowide,dc=com
-uniqueMember: cn=ldap-products,ou=groups,dc=prowide,dc=com
-uniqueMember: cn=ldap-management,ou=groups,dc=prowide,dc=com
-cn: ldap-authors
+uniqueMember: cn=ldap-viewer,ou=groups,dc=prowide,dc=com
+uniqueMember: cn=ldap-creator,ou=groups,dc=prowide,dc=com
+uniqueMember: cn=ldap-approver,ou=groups,dc=prowide,dc=com
+uniqueMember: cn=ldap-administrator,ou=groups,dc=prowide,dc=com
+cn: ldap-employees

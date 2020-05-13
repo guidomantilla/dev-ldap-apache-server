@@ -7,8 +7,10 @@
 # APACHEDS_DATA
 # APACHEDS_USER
 # APACHEDS_GROUP
-
+echo ${APACHEDS_DATA}
+echo ${APACHEDS_INSTANCE}
 APACHEDS_INSTANCE_DIRECTORY=${APACHEDS_DATA}/${APACHEDS_INSTANCE}
+echo ${APACHEDS_INSTANCE_DIRECTORY}
 
 ## When a fresh data folder is detected then bootstrap the instance configuration.
 if [ ! -d ${APACHEDS_INSTANCE_DIRECTORY} ]; then
@@ -20,6 +22,7 @@ if [ ! -d ${APACHEDS_INSTANCE_DIRECTORY} ]; then
 	/opt/apacheds-${APACHEDS_VERSION}/bin/apacheds console ${APACHEDS_INSTANCE} &
 	sleep 15
 	ldapadd -v -h localhost:10389 -c -x -D uid=admin,ou=system -w secret -f /bootstrap/prowide-entry.ldif
+	ldapadd -v -h localhost:10389 -c -x -D uid=admin,ou=system -w secret -f /bootstrap/sample-entry.ldif
 	/opt/apacheds-${APACHEDS_VERSION}/bin/apacheds stop ${APACHEDS_INSTANCE}
 	
 	## If TESTDATA20K is set to TRUE the test-dataset with 20K users will be installed on first startup
